@@ -18,8 +18,21 @@ int main(void)
 	ALL_Iinitialization();
 	while(1)
 	{
-		LED_1_OFF();
-     	LED_2_OFF();
+		//暂定气缸控制格式
+		OPEN_CYLINDER(1);
+		delay_ms(500);
+		CLOSE_CYLINDER(1);
+		delay_ms(500);
+		OPEN_CYLINDER(2);
+		delay_ms(500);
+		CLOSE_CYLINDER(2);
+		delay_ms(500);
+		OPEN_CYLINDER(3);
+		delay_ms(500);
+		CLOSE_CYLINDER(3);
+		delay_ms(500);
+//		LED_1_OFF();
+//     	LED_2_OFF();
 	}
 }
 
